@@ -1,0 +1,1 @@
+Welcome to my professional portfolio! This repository showcases my projects, skills, and achievements in Python, Machine Learning, and Web Development. Explore real-world projects, including data analysis, web apps, and ML models. Designed to demonstrate my technical expertise, problem-solving skills, and continuous learning journey in the IT industry.
