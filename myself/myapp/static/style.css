@@ -50,7 +50,9 @@ nav ul li a:hover {
     padding: 110px 3%;
     max-width: 1200px;
     margin: auto;
+    
 }
+
 .content {
     max-width: 600px;
 }
@@ -236,6 +238,16 @@ p {
     text-decoration: none;
    
     
+}
+.certilink2{
+    color:#fdfefe ;
+    text-decoration: none;
+   
+}
+.certilink2:hover{
+    color:#1da1f2 ;
+    text-decoration: none;
+   
 }
 
 
@@ -428,4 +440,10 @@ p {
 .social-icons{
    text-align: center;
     align-items: center;
+}
+.phone-link{
+    text-decoration: none;
+}
+.class{
+    text-decoration: none;
 }

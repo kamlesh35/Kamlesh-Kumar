@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'myself.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
@@ -116,9 +116,24 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'  # Verify this is correct for your provider
+EMAIL_PORT = 587
+EMAIL_USE_TLS = False
+EMAIL_HOST_USER = 'kk919844@gmail.com'  # Use your actual email
+EMAIL_HOST_PASSWORD = '@Kamlesh9696'  # Use your actual password
+
+# In settings.py
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+

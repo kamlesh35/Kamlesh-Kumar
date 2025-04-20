@@ -27,7 +27,7 @@
         </nav>
     </header>
 
-    <section class="hero" id="home">
+        <section class="hero" id="home">
         <div class="content">
             <h1>Hi, It's me <span class="highlight"><br>Kamlesh Kumar</span></h1>
             <h3>I am a</h3>
@@ -61,23 +61,24 @@
             <img src="{% static "Kamlesh_photo.jpg" %}" alt="Profile Image" class="profile-img">
             <div class="content">
                 <h1 class = 'abouth1'>About Me</h1>
-                <p>I am Kamlesh Kumar, a skilled <a href = "" target = _blank, class = "certilink"> Machine Learning & Deep Learning.AI</a> and <span class=fntstle>Python Django Developer</span>, passionate about AI-driven solutions and web application development. I hold a <a href = "" target = _blank, class = "certilink"> Machine Learning & Deep Learning.AI </a>certification from Stanford University and a Python Django certification from ThinkNEXT Technology.</p>
+                <p>I am Kamlesh Kumar, a skilled <a href = "https://www.coursera.org/user/42f2fdd72104e4afd0ba2788688654c0" target = _blank, class = "certilink"> Machine Learning & Deep Learning.AI</a> and <span class=fntstle>Python Django Developer</span>, passionate about AI-driven solutions and web application development. I hold a <a href = "" target = _blank, class = "certilink"> Machine Learning & Deep Learning.AI </a>certification from Stanford University and a Python Django certification from ThinkNEXT Technology.</p>
+                <hr>
                 <div class="tabs">
                     <div class="tab" onclick="showSection('skills')">Skills</div>
                     <div class="tab" onclick="showSection('experience')">Experience</div>
                     <div class="tab" onclick="showSection('education')">Education</div>
                 </div>
                 <div id="skills" class="content-section active">
-                    <p><strong>Machine Learning & Deep Learning.AI</strong> certified in machine learning from stanford University</p>
+                    <p><strong><a href = "https://www.coursera.org/user/42f2fdd72104e4afd0ba2788688654c0" target = _blank, class = "certilink2">Machine Learning & Deep Learning.AI</a></strong> certified in machine learning from <a href = "https://www.stanford.edu/" target = _blank, class = "certilink2">stanford University</a></p>
                     <p><strong>Python Django</strong> certified in Python Django from ThinkNEXT Technology Mohali Chandigarh</p>
                     <p><strong>SQL & MYSQL:</strong>Knowledge of SQL query and MySQL Workbench and strong knowledge Database</p>
-                    <p><strong>Git & GitHub:</strong>Understanding about Git (Version Control System) and Github Repojarty</p>
+                    <p><strong><a href = "https://github.com/kamlesh35" target = _blank, class = "certilink2">Git & GitHub:</a></strong>Understanding about Git (Version Control System) and Github Repojarty</p>
                 </div>
                 <div id="experience" class="content-section">
                     <p><strong>Experience:</strong> Fresher</p>
                 </div>
                 <div id="education" class="content-section">
-                    <p><strong>Education:</strong> Bachelor's Degree in <span class = 'fntstle'>Computer Science & Engineering</span> from Rajarshi Rananjay Singh Institute of Management and Technology</p>
+                    <p><strong>Education:</strong> Bachelor's Degree in <span class = "certilink2">Computer Science & Engineering</span> from <a href = "https://rrsimt.ac.in/" target = _blank, class = "certilink2">Rajarshi Rananjay Singh Institute of Management and Technology</a></p>
                     <p><strong>Second Secondary Class:</strong> Secondary Class from Shri Raja Ram Inter Collage Bela Patti Pratapgarh</p>
                     <p><strong>Secondary Class:</strong> Secondary Class from Kisan Majadur Inter mediate collage Narayanpur</p>
                 </div>
@@ -98,7 +99,7 @@
                     <h2>Heart Disease Prediction Model</h2>
                     <p>A machine learning model that predicts heart disease based on patient health data.</p>
                     <div class="popup">Click to explore more details!</div>
-                    <a href="https://github.com/yourusername/heart-disease-prediction" target="_blank">View Project</a>
+                    <a href="https://github.com/kamlesh35/Heart-Disease-Prediction-Model" target="_blank">View Project</a>
                 </div>
                 <div class="project-card">
                     <img src="{% static "project0.png" %}" alt="Digit Recognition">
@@ -133,7 +134,7 @@
                 <div class="skill">
                     <img src="{% static 'machine.png' %}" alt="Machine Learning & Deep Learning.AI">
                     <div class="skill-text">
-                        <h2>Machine Learning & Deep Learning.AI<a href = '#'>  Certificate</a></h2>
+                        <h2><a href = 'https://www.coursera.org/account/accomplishments/specialization/1XVDFW5YJUTU' target = _blank, class = "certilink2">Machine Learning & Deep Learning.AI<span class = "certilink" > (Certificate)</span></a></h2>
                         <p>Diving Deep into Supervised Machine Learning: Regression & Classification! Understanding these advanced algorithms is crucial for building robust AI solutions that can tackle real-world challenges in computer vision, NLP, and autonomous systems.</p>
                     </div>
                 </div>
@@ -154,28 +155,40 @@
                 <div class="contact-left">
                     <h2>Contact Me</h2>
                     <p><i class="fas fa-play"></i> <a href='https://www.github.com/kamlesh35' style="color:white;">github.com/kamlesh35</a></p>
-                    <p><i class="fas fa-phone"></i> +91-9696160943</p>
-                    <p><i class="fas fa-envelope"></i> kk919844@gmail.com</p>                    <div class="social-icons">
+                    <div class = 'mail'>
+                    <a href="tel:{{ phone }}" class="phone-link">📞 Call Me: {{ phone }}</a>
+                    <a href="mailto:{{ email_1 }}" class="phone-link">📩 Email Me: {{ email }}</a>                    <div class="social-icons">
+                    </div>
                     <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/kamlesh-k-bb9705247/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://www.github.com/kamlesh35" class="github"><i class="fa-brands fa-github"></i></a>
                 </div>
-                    <a href="#" download="Kamlesh_Kumar_CV.pdf">
+                    <a href="{% static 'kk.pdf' %}" download="Kamlesh_Kumar_CV.pdf">
                     <button class="download-btn">Download CV</button>
                     </a>
             </div>
-            <table method = 'POST' action="{% url 'index' %}">
+            <form  method="POST" action="{% url 'index' %}">
                 {% csrf_token %}
                 <div class="contact-right">
-                    <input type="text" class="name" placeholder="Your Name" required>
-                    <input type="email" class="email" placeholder="Your Email" required>
-                    <textarea class="message" placeholder="Your Message" required></textarea>
+                    <input type="text" class="name" name = "name" placeholder="Your Name" required>
+                    <input type="email" class="email" name = "email" placeholder="Your Email" required>
+                    <textarea class="message" name = "message" placeholder="Your Message" required></textarea>
                     <button class="submit-btn">Submit</button>
                 </div>
-            </table>
-        </section>
+                </form>
+               </section>
+               {% if messages %}
+<script>
+    window.onload = function () {
+        {% for message in messages %}
+            alert("{{ message|escapejs }}");
+        {% endfor %}
+    };
+</script>
+{% endif %}
 
+       
 
         <footer class="text-center bg-dark text-white p-3">
             <div class="social-icons" , id='foot'>
