@@ -2,5 +2,6 @@ Welcome to my professional portfolio! This repository showcases my projects, ski
 
 And Here are my Home page of myportfolio
 
-![image](https://github.com/user-attachments/assets/0e26e739-5e9f-465d-a1a0-891c55bfbac7)
+![Uploading image.png…]()
+
 
