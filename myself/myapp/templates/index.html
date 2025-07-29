@@ -102,12 +102,11 @@
                     <a href="https://github.com/kamlesh35/Heart-Disease-Prediction-Model" target="_blank">View Project</a>
                 </div>
                 <div class="project-card">
-                    <img src="{% static "project0.png" %}" alt="Digit Recognition">
-                    <h2>Digit Recognition</h2>
-                    <p>A deep learning model that recognizes handwritten digits using CNN(Convolutional Neural Network).
-                    </p>
+                    <img src="{% static "rest.avif" %}" alt="Digit Recognition">
+                    <h2>REST API with Django</h2>
+                    <p>This project is a RESTful API built using the Django framework and Django REST Framework (DRF) to demonstrate full CRUD (Create, Read, Update, Delete) functionality for a resource (such as Books, Users, Products, etc</p>
                     <div class="popup">Click to explore more details!</div>
-                    <a href="https://github.com/yourusername/digit-recognition" target="_blank">View Project</a>
+                    <a href="https://github.com/kamlesh35/RestApi.git" target="_blank">View Project</a>
                 </div>
                 <div class="project-card">
                     <img src="{% static "project03.jpg" %}" alt="House Price Prediction Model">
@@ -135,15 +134,22 @@
                     <img src="{% static 'machine.png' %}" alt="Machine Learning & Deep Learning.AI">
                     <div class="skill-text">
                         <h2><a href = 'https://www.coursera.org/account/accomplishments/specialization/1XVDFW5YJUTU' target = _blank, class = "certilink2">Machine Learning & Deep Learning.AI<span class = "certilink" > (Certificate)</span></a></h2>
-                        <p>Diving Deep into Supervised Machine Learning: Regression & Classification! Understanding these advanced algorithms is crucial for building robust AI solutions that can tackle real-world challenges in computer vision, NLP, and autonomous systems.</p>
+                        <p>Machine Learning is a core field of Artificial Intelligence that enables systems to learn from data and make predictions. It includes supervised learning techniques like regression, used for continuous value prediction, and classification for assigning categories. Deep learning, a subset of ML, uses neural networks with layers of neurons to process complex data such as images and text. These models are trained using activation and loss functions, optimized via gradient descent. Unsupervised learning uncovers hidden patterns in unlabeled data using clustering methods like K-Means and dimensionality reduction techniques like PCA. ML is applied in finance, healthcare, automation, and robotics.</p>
                     </div>
                 </div>
         
                 <div class="skill">
                     <img src="{% static 'py.png' %}" alt="Python Django">
                     <div class="skill-text">
-                        <h2>Python Django</h2>
-                        <p>I have successfully completed a Python Programming and Django Certification from ThinkNEXT Technology, Mohali. This certification has equipped me with in-depth knowledge of Python programming, covering fundamental and advanced concepts,. </p>
+                        <h2><a href = 'https://drive.google.com/file/d/1Tz9IIix-pfmQ7roWac4BkFVlKhVFss3U/view?usp=drive_link' target = _blank, class = "certilink2">Python Django<span class = "certilink" > (Certificate)</h2>
+                        <p>A Python Django certification covers Python fundamentals (data types, functions, OOP), key libraries (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras,), Django architecture (MTV), models, views, templates, forms, admin panel, ORM, authentication, Django REST Framework, middleware, testing, deployment, Git, and security—validating full-stack development using Python and Django. </p>
+                    </div>
+                </div>
+                <div class="skill">
+                    <img src="{% static 'im.png' %}" alt="SQL & MYSQL and PostgreSQL">
+                    <div class="skill-text">
+                        <h2>SQL/MySQL and PostgreSQL</h2>
+                        <p>SQL (Structured Query Language) is used to manage and query data in relational databases. MySQL is a popular open-source database known for its speed and ease of use, commonly used in web applications. PostgreSQL is another powerful open-source database that supports advanced features like custom functions and full-text search. While both use SQL, PostgreSQL offers more flexibility and standards compliance, making it suitable for complex projects. The choice depends on performance, scalability, and application needs.</p>
                     </div>
                 </div>
         
@@ -154,17 +160,18 @@
             <div class="contact-container">
                 <div class="contact-left">
                     <h2>Contact Me</h2>
-                    <p><i class="fas fa-play"></i> <a href='https://www.github.com/kamlesh35' style="color:white;">github.com/kamlesh35</a></p>
+                    <p> <a href='https://www.github.com/kamlesh35' style="color:white;">github.com/kamlesh35</a></p>
                     <div class = 'mail'>
-                    <a href="tel:{{ phone }}" class="phone-link">📞 Call Me: {{ phone }}</a>
-                    <a href="mailto:{{ email_1 }}" class="phone-link">📩 Email Me: {{ email }}</a>                    <div class="social-icons">
+                    <a class = 'mailprt' href="tel:{{ phone }}" class="phone-link">📞 Call Me: {{ phone }}</a>
+                    <a  class = 'mailprt'href="mailto:{{ email_1 }}" class="phone-link">📩 Email Me: {{ email_1 }}</a>                    
                     </div>
+                    <div class="social-icons">
                     <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/kamlesh-k-bb9705247/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://www.github.com/kamlesh35" class="github"><i class="fa-brands fa-github"></i></a>
-                </div>
-                    <a href="{% static 'kk.pdf' %}" download="Kamlesh_Kumar_CV.pdf">
+                    </div>
+                    <a href="{% static 'Kamlesh_Kumar .pdf' %}" download="Kamlesh_Kumar_CV.pdf">
                     <button class="download-btn">Download CV</button>
                     </a>
             </div>
@@ -173,6 +180,7 @@
                 <div class="contact-right">
                     <input type="text" class="name" name = "name" placeholder="Your Name" required>
                     <input type="email" class="email" name = "email" placeholder="Your Email" required>
+                    <input type = number class = "phone" name = "phone" placeholder="Your Phone Number" required>
                     <textarea class="message" name = "message" placeholder="Your Message" required></textarea>
                     <button class="submit-btn">Submit</button>
                 </div>

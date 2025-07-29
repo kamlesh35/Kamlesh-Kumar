@@ -31,7 +31,8 @@ nav ul {
     gap: 20px;
 }
 nav ul li {
-    display: inline;
+    display: inline-block;
+    position: relative;
 }
 nav ul li a {
     color: #fff;
@@ -39,7 +40,22 @@ nav ul li a {
     font-size: 18px;
 }
 nav ul li a:hover {
-    color: #ff0066;
+    color: #ff0077;
+    position: relative;
+    
+}
+nav ul li a::after {
+    content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px; /* Adjust space below text */
+      width: 0;
+      height: 3px; /* Underline thickness */
+      background-color: #007BFF; /* Underline color */
+      transition: width 0.4s ease;
+  }
+nav ul li a:hover::after {
+    width: 100%;
 }
 .hero {
     display: flex;
@@ -73,12 +89,31 @@ h3{
 .image img {
     width: 350px;
     border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .social-icons {
     margin-top: 20px;
     display: flex;
     gap: 20px;
+    
 }
+
+#foot{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 .social-icons a {
     display: flex;
     align-items: center;
@@ -91,14 +126,15 @@ h3{
     font-size: 24px;
     transition: 0.3s;
 }
-.social-icons a .fab {
+
+.social-icons a.fab {
     color: rgb(41, 39, 179);
 }
-.social-icons a .instagram {
-    color: rgb(208, 76, 43);
+.social-icons a.instagram {
+    color: rgb(228, 88, 63);
 }
 .social-icons a.github {
-    color: #2328b6;
+    color: #f7f7f9;
 }
 .social-icons a.linkedin {
     color: #0077b5;
@@ -111,6 +147,7 @@ h3{
 }
 .social-icons a:hover {
     transform: scale(1.1);
+    background-color: #a36b82;
 }
 /* Typing Container */
  .typing-container {
@@ -149,7 +186,7 @@ h3{
 /* Swapping Text */
 @keyframes swapText {
     0%, 50% {
-        content: "Machine Learning Engineer";
+        content: "ML Engineer";
     }
     51%, 100% {
         content: "AI Engineer";
@@ -359,15 +396,15 @@ p {
     justify-content: center;
     background-color: #1e1e1e;
     border-radius: 10px;
-    padding: 20px;
+    padding: 0px;
     margin: 20px auto;
     max-width: 800px;
     box-shadow: 0px 4px 8px rgba(146, 6, 6, 0.586);
 }
 
 .skill img {
-    width: 20%;
-    height: 20%;
+    width: 50%;
+    height: 40%;
     margin-right: 20px;
 }
 
@@ -402,7 +439,7 @@ p {
 }
 .contact-left {
     font-size: large;
-    margin-right: 30px;
+    margin-right: 25px;
 }
 .contact-left h2 {
     font-size: 28px;
@@ -446,4 +483,12 @@ p {
 }
 .class{
     text-decoration: none;
+}
+.mail{
+    display: block;
+}
+.mailprt{
+    display: flex;
+    text-decoration: none;
+    color: #f0f0f0;
 }

@@ -14,10 +14,11 @@ def index(request):
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")
+        phone = request.POST.get("phone")
         message = request.POST.get("message")
        
        # Save data to the database
-        sav = contact.objects.create(name=name, email=email, message=message)
+        sav = contact.objects.create(name=name, email=email,phone = phone, message=message)
         sav.save()
         
 
@@ -29,7 +30,7 @@ def index(request):
             ['kk919844@gmail.com'],  # Replace with your email
             fail_silently=False,
             )
-        messages.success(request, "Your message was submitted successfully!")
+        messages.success(request, "Your message was submitted successfully! \n We will touch you soon")
        
         return redirect('/')
       

@@ -1,0 +1,7 @@
+Django>=4.0,<5.0
+gunicorn    # gunicorn (Green Unicorn) is a Python WSGI HTTP server. It serves your Django (or any Python web framework) application in a production environment.
+whitenoise  # is a Python library used to serve static files (CSS, JS, images) directly from your Django application — especially in production without needing Nginx or any external file server.
+psycopg2-binary #  is a precompiled Python package that acts as the PostgreSQL database adapter for Python/Django. It allows your Django application to connect to a PostgreSQL database.
+django-crispy-forms #  is a Django package that makes your HTML forms look clean, well-styled, and responsive using frameworks like Bootstrap, Tailwind, or Foundation — without writing raw HTML form fields manually.
+pillow   # is a powerful Python Imaging Library (PIL) fork that allows Django (and other Python apps) to handle image processing
+django-environ #  is a library that helps you manage environment variables in a Django project using a .env file.
